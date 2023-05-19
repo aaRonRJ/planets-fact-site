@@ -1,0 +1,3 @@
+.nav-item {
+  @apply mx-4 first:ml-0 last:mr-0 font-spartan font-bold leading-25 tracking-1 lg:pb-[7px]
+}
