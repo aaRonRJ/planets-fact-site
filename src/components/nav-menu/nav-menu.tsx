@@ -1,20 +1,24 @@
-import { type PropFunction, component$, Fragment } from "@builder.io/qwik"
+import { type PropFunction, component$, Fragment, useStylesScoped$ } from "@builder.io/qwik"
 import { Link } from "@builder.io/qwik-city"
 
 import Line from "../line/line"
 import ImageIcon from "../image-icon/image-icon"
 import type { Planet } from "~/interfaces"
 
+import styles from './nav-menu.css?inline'
+
 interface Props {
-  styles?: string
+  classes?: string
   planets: Planet[]
   eventClick?: PropFunction<() => void>
 }
 
 export default component$(
-  ({ planets, styles = "", eventClick = undefined }: Props) => {
+  ({ planets, classes = "", eventClick = undefined }: Props) => {
+    useStylesScoped$(styles)
+
     return (
-      <nav class={styles}>
+      <nav class={classes}>
         <ul class="w-full mr-2">
           {planets.map(({id, name}: Planet) => {
             return (

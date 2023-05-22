@@ -21,7 +21,7 @@ export default component$(({ planet = "" }: Props) => {
   const navMenuClasses = useComputed$(() => {
     const classes = ['flex px-6 z-10 fixed bg-darkBlue pt-6 w-full', showMenu.value ? 'ease-in duration-300 top-[69px]' : 'ease-in duration-300 mt-[-547px] top-[-69px]', 'md:hidden']
 
-    return classes.toString()
+    return classes.toString().replaceAll(',', ' ')
   })
 
   const toggleMenu = $(() => {
@@ -32,7 +32,7 @@ export default component$(({ planet = "" }: Props) => {
     <>
       <header class="flex top-0 w-full fixed justify-between items-center px-6 py-4 bg-darkBlue z-10 md:flex-col md:w-auto md:relative md:justify-center md:pt-8 md:pb-0 lg:flex-row lg:items-start lg:pt-0 lg:pb-5 lg:px-8 lg:justify-between">
         <h1 class="font-antonio text-white text-28 font-medium uppercase tracking-1.05 leading-normal lg:pt-[22px]">
-          Los planetas
+          The planets
         </h1>
 
         <ImageIcon
@@ -50,7 +50,7 @@ export default component$(({ planet = "" }: Props) => {
 
       <Line styles="fixed top-[68px] w-full z-10 md:static" />
 
-      <NavMenu planets={planets} eventClick={toggleMenu} styles={navMenuClasses.value} />
+      <NavMenu planets={planets} eventClick={toggleMenu} classes={navMenuClasses.value} />
     </>
   )
 })

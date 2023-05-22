@@ -1,4 +1,3 @@
-import type { Image } from './image.interface'
 import type { Resource } from './resource.interface'
 
 export interface Planet {
@@ -11,5 +10,5 @@ export interface Planet {
   revolution: string;
   radius: string;
   temperature: string;
-  images: Image;
 }
+ 
