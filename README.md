@@ -1,65 +1,56 @@
-# Qwik City App ⚡️
+# Frontend Mentor - Planets fact site solution
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
----
+## Table of contents
 
-## Project Structure
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+## Overview
 
-Inside your project, you'll see the following directory structure:
+### The challenge
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
+Users should be able to:
 
-- `src/routes`: Provides the directory based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
 
-- `src/components`: Recommended directory for components.
+### Screenshot
+![](https://i.imgur.com/zrYfdXd.png)
+![](https://i.imgur.com/c5CqIc1.png)
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+### Links
 
-## Add Integrations and deployment
+- Solution URL: [https://github.com/aaRonRJ/planets-fact-site]
+- Live Site URL: []
 
-Use the `pnpm qwik add` command to add additional integrations. Some examples of integrations include: Cloudflare, Netlify or Express server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/guides/static-site-generation/).
+## My process
 
-```shell
-pnpm qwik add # or `yarn qwik add`
-```
+### Built with
 
-## Development
+- Qwik
+- Typescript
+- Tailwind
 
-Development mode uses [Vite's development server](https://vitejs.dev/). During development, the `dev` command will server-side render (SSR) the output.
+### What I learned
 
-```shell
-npm start # or `yarn start`
-```
+This was my first time using Qwik.
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+### Continued development
 
-## Preview
+In the future I would like to add animations.
 
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to locally preview a production build, and it should not be used as a production server.
+## Author
 
-```shell
-pnpm preview # or `yarn preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
-
-```shell
-pnpm build # or `yarn build`
-```
+- Github account - [aaRonRJ](https://github.com/aaRonRJ)
+- Website - [Portfolio](https://www.aresino.dev/)
+- Email - [aresinodeveloper@gmail.com](aresinodeveloper@gmail.com)
