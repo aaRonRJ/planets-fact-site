@@ -1,11 +1,15 @@
-import { component$, Slot } from '@builder.io/qwik';
-import { routeLoader$ } from '@builder.io/qwik-city'
+import { component$, Slot } from "@builder.io/qwik"
+import { routeLoader$ } from "@builder.io/qwik-city"
 
-import Header from '~/components/header/header'
-import { PlanetsProvider } from '~/context/planets/planets-provider'
+import Header from "~/components/header/header"
+import { PlanetsProvider } from "~/context/planets/planets-provider"
 
-export const useGetPlanet = routeLoader$<string>(({ params }) => {
-  return params.id ?? ''
+export const useGetPlanet = routeLoader$<string>(({ params, redirect }) => {
+  if (!params.id) {
+    redirect(301, '/planets/mercury')
+  }
+
+  return params.id
 })
 
 export default component$(() => {
@@ -18,8 +22,6 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
-
-      {/** TODO: Footer */}
     </PlanetsProvider>
-  );
-});
+  )
+})

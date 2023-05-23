@@ -28,7 +28,7 @@ export default component$(({ tab, planet }: PlanetImageProps) => {
   })
 
   useVisibleTask$(({ track }) => {
-    track(() => tab === "geology")
+    track(() => planet)
     geologyImage.imageSm = getUrlImage(planet.geology.image, "small")
     geologyImage.imageMd = getUrlImage(planet.geology.image, "medium")
     geologyImage.imageLg = getUrlImage(planet.geology.image)
