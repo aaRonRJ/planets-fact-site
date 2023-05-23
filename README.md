@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/aaRonRJ/planets-fact-site]
+- Solution URL: [https://github.com/aaRonRJ/planets-fact-site](https://github.com/aaRonRJ/planets-fact-site)
 - Live Site URL: []
 
 ## My process
