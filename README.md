@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/aaRonRJ/planets-fact-site](https://github.com/aaRonRJ/planets-fact-site)
-- Live Site URL: [https://stupendous-axolotl-064aa1.netlify.app/planets/uranus/](Site URL)
+- Live Site URL: [https://stupendous-axolotl-064aa1.netlify.app](https://stupendous-axolotl-064aa1.netlify.app)
 
 ## My process
 
